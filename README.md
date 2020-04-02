@@ -1,6 +1,6 @@
 ### How to Contribute: 
 - Find a task you're interested in working on in the [issues](https://github.com/cityatoms/CityAtomsIOS/issues) list.
-- Leave a comment on the issue mentioning that you wanted to be assigned to you.
+- Leave a comment on the issue mentioning that you want it to be assigned to you.
 - The team will review your comment and assign the task.
 
 ### Pull Requests
