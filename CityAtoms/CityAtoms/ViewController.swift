@@ -9,12 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var healthyFaceView: UIView!
+    @IBOutlet var sickFaceView: UIView!
+    @IBOutlet var maskFaceView: UIView!
+    @IBOutlet var virusFaceView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
+    
 
 }
 

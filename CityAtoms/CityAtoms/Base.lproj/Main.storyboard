@@ -23,31 +23,156 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5H-ek-4dy">
                                 <rect key="frame" x="20" y="155" width="374" height="91"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HealthyFace" translatesAutoresizingMaskIntoConstraints="NO" id="jea-4i-jE4">
+                                        <rect key="frame" x="21" y="16" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="BEj-3R-frN"/>
+                                            <constraint firstAttribute="height" constant="60" id="iIX-WY-Z8I"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm feeling great" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zn7-P8-O0C">
+                                        <rect key="frame" x="113" y="36" width="171" height="25"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
+                                        <color key="textColor" red="0.3272463679" green="0.50763982529999996" blue="0.96870690579999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="r03-ue-hjd">
+                                        <rect key="frame" x="336" y="38" width="30" height="21.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="qy0-eZ-BSv"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.99999326470000005" green="0.99999338390000003" blue="0.99999183420000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
+                                    <constraint firstItem="Zn7-P8-O0C" firstAttribute="leading" secondItem="jea-4i-jE4" secondAttribute="trailing" constant="32" id="1Rf-Ev-tKQ"/>
+                                    <constraint firstItem="jea-4i-jE4" firstAttribute="top" secondItem="d5H-ek-4dy" secondAttribute="top" constant="16" id="FVm-le-Y85"/>
+                                    <constraint firstItem="Zn7-P8-O0C" firstAttribute="top" secondItem="d5H-ek-4dy" secondAttribute="top" constant="36" id="Mr5-wj-fpa"/>
+                                    <constraint firstItem="r03-ue-hjd" firstAttribute="trailing" secondItem="d5H-ek-4dy" secondAttribute="trailingMargin" id="Msv-kp-nlS"/>
+                                    <constraint firstAttribute="bottom" secondItem="r03-ue-hjd" secondAttribute="bottom" constant="30" id="NGe-OP-0ia"/>
+                                    <constraint firstItem="jea-4i-jE4" firstAttribute="leading" secondItem="d5H-ek-4dy" secondAttribute="leading" constant="21" id="acG-v1-vFy"/>
+                                    <constraint firstItem="r03-ue-hjd" firstAttribute="centerY" secondItem="Zn7-P8-O0C" secondAttribute="centerY" id="gcS-vZ-1uf"/>
                                     <constraint firstAttribute="height" constant="91" id="qpB-S1-8fx"/>
+                                    <constraint firstAttribute="bottom" secondItem="jea-4i-jE4" secondAttribute="bottom" constant="15" id="rtp-1f-WPK"/>
+                                    <constraint firstItem="r03-ue-hjd" firstAttribute="top" secondItem="Zn7-P8-O0C" secondAttribute="top" id="zTy-78-Klf"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6WR-MX-Hc8">
                                 <rect key="frame" x="20" y="290" width="374" height="91"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SickFace" translatesAutoresizingMaskIntoConstraints="NO" id="a2N-2N-xsR">
+                                        <rect key="frame" x="21" y="15.5" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="rws-Ux-pFc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have symptoms" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUp-Fy-r3s">
+                                        <rect key="frame" x="113" y="33" width="178" height="25"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
+                                        <color key="textColor" red="0.3272463679" green="0.50763982529999996" blue="0.96870690579999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Mu1-bk-orI">
+                                        <rect key="frame" x="336" y="35" width="30" height="21.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="fns-JI-MIO"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.95327991249999999" green="0.96039587260000003" blue="0.98038965460000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
+                                    <constraint firstItem="yUp-Fy-r3s" firstAttribute="leading" secondItem="a2N-2N-xsR" secondAttribute="trailing" constant="32" id="9Ah-4I-F9L"/>
                                     <constraint firstAttribute="height" constant="91" id="Axa-dk-Ooe"/>
+                                    <constraint firstItem="a2N-2N-xsR" firstAttribute="leading" secondItem="6WR-MX-Hc8" secondAttribute="leading" constant="21" id="G6s-mw-BOz"/>
+                                    <constraint firstItem="a2N-2N-xsR" firstAttribute="centerY" secondItem="yUp-Fy-r3s" secondAttribute="centerY" id="Rb5-mI-Tvj"/>
+                                    <constraint firstItem="Mu1-bk-orI" firstAttribute="trailing" secondItem="6WR-MX-Hc8" secondAttribute="trailingMargin" id="Tff-2p-7x4"/>
+                                    <constraint firstItem="Mu1-bk-orI" firstAttribute="centerY" secondItem="yUp-Fy-r3s" secondAttribute="centerY" id="XFy-Rj-iEP"/>
+                                    <constraint firstItem="Mu1-bk-orI" firstAttribute="bottom" secondItem="yUp-Fy-r3s" secondAttribute="bottom" id="bLl-du-6Uw"/>
+                                    <constraint firstItem="Mu1-bk-orI" firstAttribute="centerY" secondItem="6WR-MX-Hc8" secondAttribute="centerY" id="bo4-mL-Jci"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mu1-bk-orI" secondAttribute="bottom" constant="33" id="tlh-yv-f8F"/>
+                                    <constraint firstItem="a2N-2N-xsR" firstAttribute="top" secondItem="6WR-MX-Hc8" secondAttribute="top" constant="15.5" id="vzy-kW-fSQ"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRi-UU-e6R">
                                 <rect key="frame" x="20" y="433" width="374" height="91"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MaskFace" translatesAutoresizingMaskIntoConstraints="NO" id="lB6-Mm-w91">
+                                        <rect key="frame" x="21" y="15.5" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="KCd-D8-bz9"/>
+                                            <constraint firstAttribute="height" constant="60" id="zeW-eV-Nsw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I've got a test for Covid19, still waiting for results" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="kge-CH-q0K">
+                                        <rect key="frame" x="113" y="12" width="187" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="67" id="tBr-So-Tar"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
+                                        <color key="textColor" red="0.3272463679" green="0.50763982529999996" blue="0.96870690579999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7IU-S4-DYi">
+                                        <rect key="frame" x="336" y="37.5" width="30" height="16.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="Le0-X7-Wf4"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.88331937790000004" green="0.90077412130000001" blue="0.96079224350000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
+                                    <constraint firstItem="lB6-Mm-w91" firstAttribute="leading" secondItem="fRi-UU-e6R" secondAttribute="leading" constant="21" id="2nQ-p0-xwI"/>
+                                    <constraint firstItem="kge-CH-q0K" firstAttribute="leading" secondItem="lB6-Mm-w91" secondAttribute="trailing" constant="32" id="3Xg-Ae-azy"/>
                                     <constraint firstAttribute="height" constant="91" id="CYk-gr-jY1"/>
+                                    <constraint firstItem="7IU-S4-DYi" firstAttribute="leading" secondItem="kge-CH-q0K" secondAttribute="trailing" constant="36" id="E96-BF-vQ0"/>
+                                    <constraint firstAttribute="trailing" secondItem="7IU-S4-DYi" secondAttribute="trailing" constant="8" id="jyS-bA-1ya"/>
+                                    <constraint firstItem="kge-CH-q0K" firstAttribute="top" secondItem="fRi-UU-e6R" secondAttribute="top" constant="12" id="kZN-My-KMs"/>
+                                    <constraint firstAttribute="bottom" secondItem="kge-CH-q0K" secondAttribute="bottom" constant="12" id="lJf-dq-Lz5"/>
+                                    <constraint firstAttribute="bottom" secondItem="kge-CH-q0K" secondAttribute="bottom" constant="12" id="leA-jX-kd2"/>
+                                    <constraint firstItem="kge-CH-q0K" firstAttribute="centerY" secondItem="lB6-Mm-w91" secondAttribute="centerY" id="t4J-jW-LAg"/>
+                                    <constraint firstItem="kge-CH-q0K" firstAttribute="centerY" secondItem="7IU-S4-DYi" secondAttribute="centerY" id="xlH-10-oSM"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wf-Vr-L2E">
                                 <rect key="frame" x="20" y="593" width="374" height="91"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VirusFace" translatesAutoresizingMaskIntoConstraints="NO" id="ME9-1t-JOx">
+                                        <rect key="frame" x="21" y="15" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Exa-09-Xbr"/>
+                                            <constraint firstAttribute="width" constant="60" id="YCS-WS-r71"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have coronavirus" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRo-eP-Mr2">
+                                        <rect key="frame" x="113" y="32" width="195" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="bWH-f3-g0R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="22"/>
+                                        <color key="textColor" red="0.3272463679" green="0.50763982529999996" blue="0.96870690579999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sLo-cC-8DN">
+                                        <rect key="frame" x="336" y="35" width="30" height="20.5"/>
+                                        <color key="tintColor" red="0.33094084260000001" green="0.51177418230000005" blue="0.96870654820000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="Y1R-J6-Q8q"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.78308409450000005" green="0.82815033199999999" blue="0.98042160270000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.78304105999999996" green="0.82824414970000004" blue="0.97649925950000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
+                                    <constraint firstItem="sLo-cC-8DN" firstAttribute="centerY" secondItem="ME9-1t-JOx" secondAttribute="centerY" id="0Cm-fd-msU"/>
+                                    <constraint firstItem="sLo-cC-8DN" firstAttribute="centerY" secondItem="PRo-eP-Mr2" secondAttribute="centerY" id="37E-eJ-sUD"/>
+                                    <constraint firstAttribute="trailing" secondItem="sLo-cC-8DN" secondAttribute="trailing" constant="8" id="Hjk-C3-7H4"/>
+                                    <constraint firstItem="ME9-1t-JOx" firstAttribute="leading" secondItem="7Wf-Vr-L2E" secondAttribute="leading" constant="21" id="SxW-dj-dUA"/>
                                     <constraint firstAttribute="height" constant="91" id="UNr-60-vgT"/>
+                                    <constraint firstItem="sLo-cC-8DN" firstAttribute="leading" secondItem="PRo-eP-Mr2" secondAttribute="trailing" constant="28" id="VcA-1W-G28"/>
+                                    <constraint firstAttribute="bottom" secondItem="PRo-eP-Mr2" secondAttribute="bottom" constant="33" id="sje-MQ-h20"/>
+                                    <constraint firstItem="PRo-eP-Mr2" firstAttribute="top" secondItem="7Wf-Vr-L2E" secondAttribute="top" constant="32" id="sxY-6l-6HZ"/>
+                                    <constraint firstItem="sLo-cC-8DN" firstAttribute="top" secondItem="7Wf-Vr-L2E" secondAttribute="top" constant="33" id="yVZ-2R-Ezz"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you feeling?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iek-gX-G4X">
@@ -82,10 +207,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="healthyFaceView" destination="d5H-ek-4dy" id="R7F-UZ-7n5"/>
+                        <outlet property="maskFaceView" destination="fRi-UU-e6R" id="z5e-Ba-B3S"/>
+                        <outlet property="nameLabel" destination="JcO-ad-Z70" id="MZm-5N-yzl"/>
+                        <outlet property="sickFaceView" destination="6WR-MX-Hc8" id="Uuu-Sd-5k7"/>
+                        <outlet property="virusFaceView" destination="7Wf-Vr-L2E" id="1FP-Wr-VHF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="HealthyFace" width="44" height="44"/>
+        <image name="MaskFace" width="41" height="44"/>
+        <image name="SickFace" width="44" height="44"/>
+        <image name="VirusFace" width="44" height="44"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+    </resources>
 </document>
