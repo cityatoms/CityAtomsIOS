@@ -10,17 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var healthyFaceView: UIView!
-    @IBOutlet var sickFaceView: UIView!
-    @IBOutlet var maskFaceView: UIView!
-    @IBOutlet var virusFaceView: UIView!
+    @IBOutlet var nameLabel: UILabel! //welcome name label
+    @IBOutlet var healthyFaceView: UIView! //first cell
+    @IBOutlet var sickFaceView: UIView! //second cell
+    @IBOutlet var maskFaceView: UIView! //third cell
+    @IBOutlet var virusFaceView: UIView! //forth cell
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        initializeUI()
     }
     
+    func initializeUI() {
+        sickFaceView.addDropDownShadow(color: .gray, opacity: 0.5, offset: .init(width: 1, height: 6), radius: 8)
+        maskFaceView.addDropDownShadow(color: .gray, opacity: 0.5, offset: .init(width: 1, height: 6), radius: 8)
+        virusFaceView.addDropDownShadow(color: .gray, opacity: 0.5, offset: .init(width: 1, height: 6), radius: 8)
+        healthyFaceView.addDropDownShadow(color: .gray, opacity: 0.5, offset: .init(width: 1, height: 6), radius: 8)
+        
+        sickFaceView.layer.cornerRadius = 5
+        maskFaceView.layer.cornerRadius = 5
+        virusFaceView.layer.cornerRadius = 5
+        healthyFaceView.layer.cornerRadius = 5
+        
+        
+    }
 
 }
 
