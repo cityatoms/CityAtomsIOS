@@ -1,6 +1,0 @@
-framework module Pods_city_atoms_ios {
-  umbrella header "Pods-city-atoms-ios-umbrella.h"
-
-  export *
-  module * { export * }
-}
