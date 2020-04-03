@@ -19,6 +19,8 @@ class SymptomsViewController: UIViewController {
     
     @IBOutlet var saveSymptomsButton: UIButton!
     
+    var tapCount = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,83 +51,115 @@ class SymptomsViewController: UIViewController {
         let tapGesture6 = UITapGestureRecognizer.init(target: self, action: #selector(selectCell6))
         cell6.isUserInteractionEnabled = true
         cell6.addGestureRecognizer(tapGesture6)
+        
+        saveSymptomsButton.layer.cornerRadius = 30
     }
    
     @objc
     func selectCell1() {
+        cell1.addDropDownShadow(color: .lightGray, opacity: 0.5, offset: .init(width: 1, height: 6), radius: 8)
+        cell1.backgroundColor = UIColor(named: "backgroundColor")
+        
+        tapCount += 1
+        
         if let image = cell1.viewWithTag(1) {
             let img = image as! UIImageView
-            print(img.image?.size)
+            img.image = UIImage(named: "ThroatBlue")
         }
         
         if let label = cell1.viewWithTag(2) {
             let text = label as! UILabel
-            print(text.text)
+            text.textColor = UIColor(named: "TextColor")
         }
     }
     
     @objc
     func selectCell2() {
+        cell2.addDropDownShadow(color: .lightGray, opacity: 0.5, offset: .init(width: 1, height: 6), radius: 8)
+        cell2.backgroundColor = UIColor(named: "backgroundColor")
+        
+        tapCount += 1
+        
         if let image = cell2.viewWithTag(1) {
             let img = image as! UIImageView
-            print(img.image?.size)
+            img.image = UIImage(named: "CoughBlue")
         }
         
         if let label = cell2.viewWithTag(2) {
             let text = label as! UILabel
-            print(text.text)
+            text.textColor = UIColor(named: "TextColor")
         }
     }
     
     @objc
     func selectCell3() {
+        cell3.addDropDownShadow(color: .lightGray, opacity: 0.5, offset: .init(width: 1, height: 6), radius: 8)
+        cell3.backgroundColor = UIColor(named: "backgroundColor")
+        
+        tapCount += 1
+        
         if let image = cell3.viewWithTag(1) {
             let img = image as! UIImageView
-            print(img.image?.size)
+            img.image = UIImage(named: "FeverBlue")
         }
         
         if let label = cell3.viewWithTag(2) {
             let text = label as! UILabel
-            print(text.text)
+            text.textColor = UIColor(named: "TextColor")
         }
     }
     
     @objc
     func selectCell4() {
+        cell4.addDropDownShadow(color: .lightGray, opacity: 0.5, offset: .init(width: 1, height: 6), radius: 8)
+        cell4.backgroundColor = UIColor(named: "backgroundColor")
+        
+        tapCount += 1
+        
         if let image = cell4.viewWithTag(1) {
             let img = image as! UIImageView
-            print(img.image?.size)
+            img.image = UIImage(named: "BreatheBlue")
         }
         
         if let label = cell4.viewWithTag(2) {
             let text = label as! UILabel
-            print(text.text)
+            text.textColor = UIColor(named: "TextColor")
         }
     }
     
     @objc
     func selectCell5() {
+        cell5.addDropDownShadow(color: .lightGray, opacity: 0.5, offset: .init(width: 1, height: 6), radius: 8)
+        cell5.backgroundColor = UIColor(named: "backgroundColor")
+        
+        tapCount += 1
+        
         if let image = cell5.viewWithTag(1) {
             let img = image as! UIImageView
-            print(img.image?.size)
+            img.image = UIImage(named: "TongueBlue")
         }
         
         if let label = cell5.viewWithTag(2) {
             let text = label as! UILabel
-            print(text.text)
+            text.textColor = UIColor(named: "TextColor")
         }
     }
     
     @objc
     func selectCell6() {
+        cell6.addDropDownShadow(color: .lightGray, opacity: 0.5, offset: .init(width: 1, height: 6), radius: 8)
+        cell6.backgroundColor = UIColor(named: "backgroundColor")
+        
+        tapCount += 1
+        
         if let image = cell6.viewWithTag(1) {
             let img = image as! UIImageView
-            print(img.image?.size)
+            img.image = UIImage(named: "LungsBlue")
         }
         
         if let label = cell6.viewWithTag(2) {
             let text = label as! UILabel
-            print(text.text)
+            text.textColor = UIColor(named: "TextColor")
         }
     }
     
