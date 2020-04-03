@@ -1,16 +1,19 @@
 {
   "images" : [
     {
+      "filename" : "iconSymptomLossTasteBlue.png",
       "scale" : "1x",
       "idiom" : "universal"
     },
     {
       "idiom" : "universal",
+      "filename" : "iconSymptomLossTasteBlue@2x.png",
       "scale" : "2x"
     },
     {
+      "idiom" : "universal",
       "scale" : "3x",
-      "idiom" : "universal"
+      "filename" : "iconSymptomLossTasteBlue@3x.png"
     }
   ],
   "info" : {

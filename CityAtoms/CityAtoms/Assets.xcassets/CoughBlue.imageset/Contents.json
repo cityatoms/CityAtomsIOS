@@ -2,14 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x"
+      "scale" : "1x",
+      "filename" : "dryCoughBlue.png"
     },
     {
+      "idiom" : "universal",
       "scale" : "2x",
-      "idiom" : "universal"
+      "filename" : "dryCoughBlue@2x.png"
     },
     {
       "scale" : "3x",
+      "filename" : "dryCoughBlue@3x.png",
       "idiom" : "universal"
     }
   ],
