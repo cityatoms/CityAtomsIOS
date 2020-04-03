@@ -41,6 +41,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03A9870D243736D200D7E19E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E077F393243568A30019167E /* AppDelegate.swift */,
+				E077F395243568A30019167E /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		03A9870E243736DA00D7E19E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03A987112437370D00D7E19E /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03A9870F243736DE00D7E19E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E077F397243568A30019167E /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		03A98710243736E000D7E19E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				03A9870B24365A4000D7E19E /* Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		03A987112437370D00D7E19E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E077F399243568A30019167E /* Main.storyboard */,
+				E077F3A1243568A80019167E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		E077F387243568A30019167E = {
 			isa = PBXGroup;
 			children = (
@@ -60,13 +102,11 @@
 		E077F392243568A30019167E /* CityAtoms */ = {
 			isa = PBXGroup;
 			children = (
-				E077F393243568A30019167E /* AppDelegate.swift */,
-				E077F395243568A30019167E /* SceneDelegate.swift */,
-				E077F397243568A30019167E /* ViewController.swift */,
-				03A9870B24365A4000D7E19E /* Extension.swift */,
-				E077F399243568A30019167E /* Main.storyboard */,
+				03A98710243736E000D7E19E /* Helpers */,
+				03A9870F243736DE00D7E19E /* Controllers */,
+				03A9870E243736DA00D7E19E /* Views */,
+				03A9870D243736D200D7E19E /* Application */,
 				E077F39F243568A80019167E /* Assets.xcassets */,
-				E077F3A1243568A80019167E /* LaunchScreen.storyboard */,
 				E077F3A4243568A80019167E /* Info.plist */,
 				E077F39C243568A30019167E /* CityAtoms.xcdatamodeld */,
 			);
