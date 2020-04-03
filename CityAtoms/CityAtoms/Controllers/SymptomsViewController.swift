@@ -22,6 +22,7 @@ class SymptomsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initializeUI()
     }
     
     func initializeUI() {
@@ -52,26 +53,80 @@ class SymptomsViewController: UIViewController {
    
     @objc
     func selectCell1() {
+        if let image = cell1.viewWithTag(1) {
+            let img = image as! UIImageView
+            print(img.image?.size)
+        }
+        
+        if let label = cell1.viewWithTag(2) {
+            let text = label as! UILabel
+            print(text.text)
+        }
     }
     
     @objc
     func selectCell2() {
+        if let image = cell2.viewWithTag(1) {
+            let img = image as! UIImageView
+            print(img.image?.size)
+        }
+        
+        if let label = cell2.viewWithTag(2) {
+            let text = label as! UILabel
+            print(text.text)
+        }
     }
     
     @objc
     func selectCell3() {
+        if let image = cell3.viewWithTag(1) {
+            let img = image as! UIImageView
+            print(img.image?.size)
+        }
+        
+        if let label = cell3.viewWithTag(2) {
+            let text = label as! UILabel
+            print(text.text)
+        }
     }
     
     @objc
     func selectCell4() {
+        if let image = cell4.viewWithTag(1) {
+            let img = image as! UIImageView
+            print(img.image?.size)
+        }
+        
+        if let label = cell4.viewWithTag(2) {
+            let text = label as! UILabel
+            print(text.text)
+        }
     }
     
     @objc
     func selectCell5() {
+        if let image = cell5.viewWithTag(1) {
+            let img = image as! UIImageView
+            print(img.image?.size)
+        }
+        
+        if let label = cell5.viewWithTag(2) {
+            let text = label as! UILabel
+            print(text.text)
+        }
     }
     
     @objc
     func selectCell6() {
+        if let image = cell6.viewWithTag(1) {
+            let img = image as! UIImageView
+            print(img.image?.size)
+        }
+        
+        if let label = cell6.viewWithTag(2) {
+            let text = label as! UILabel
+            print(text.text)
+        }
     }
     
     @IBAction func saveSymptoms(_ sender: Any) {
