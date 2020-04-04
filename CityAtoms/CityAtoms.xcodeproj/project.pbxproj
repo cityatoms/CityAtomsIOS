@@ -14,6 +14,10 @@
 		E077F39E243568A30019167E /* CityAtoms.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E077F39C243568A30019167E /* CityAtoms.xcdatamodeld */; };
 		E077F3A0243568A80019167E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E077F39F243568A80019167E /* Assets.xcassets */; };
 		E077F3A3243568A80019167E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E077F3A1243568A80019167E /* LaunchScreen.storyboard */; };
+		E077F3EE2437A3950019167E /* CityAtomsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E077F3ED2437A3950019167E /* CityAtomsService.swift */; };
+		E077F3F12437FA1F0019167E /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E077F3F02437FA1F0019167E /* DataPoint.swift */; };
+		E077F3F32437FA350019167E /* Symptoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = E077F3F22437FA350019167E /* Symptoms.swift */; };
+		E077F3F52437FA560019167E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E077F3F42437FA560019167E /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		E077F39F243568A80019167E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E077F3A2243568A80019167E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E077F3A4243568A80019167E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E077F3ED2437A3950019167E /* CityAtomsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityAtomsService.swift; sourceTree = "<group>"; };
+		E077F3F02437FA1F0019167E /* DataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPoint.swift; sourceTree = "<group>"; };
+		E077F3F22437FA350019167E /* Symptoms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symptoms.swift; sourceTree = "<group>"; };
+		E077F3F42437FA560019167E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 		E077F392243568A30019167E /* CityAtoms */ = {
 			isa = PBXGroup;
 			children = (
+				E077F3EF2437FA0B0019167E /* Model */,
+				E077F3EC2437A37A0019167E /* Network */,
 				E077F393243568A30019167E /* AppDelegate.swift */,
 				E077F395243568A30019167E /* SceneDelegate.swift */,
 				E077F397243568A30019167E /* ViewController.swift */,
@@ -68,6 +78,24 @@
 				E077F39C243568A30019167E /* CityAtoms.xcdatamodeld */,
 			);
 			path = CityAtoms;
+			sourceTree = "<group>";
+		};
+		E077F3EC2437A37A0019167E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E077F3ED2437A3950019167E /* CityAtomsService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E077F3EF2437FA0B0019167E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E077F3F02437FA1F0019167E /* DataPoint.swift */,
+				E077F3F22437FA350019167E /* Symptoms.swift */,
+				E077F3F42437FA560019167E /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E077F3F12437FA1F0019167E /* DataPoint.swift in Sources */,
+				E077F3EE2437A3950019167E /* CityAtomsService.swift in Sources */,
 				E077F398243568A30019167E /* ViewController.swift in Sources */,
 				E077F394243568A30019167E /* AppDelegate.swift in Sources */,
+				E077F3F52437FA560019167E /* User.swift in Sources */,
+				E077F3F32437FA350019167E /* Symptoms.swift in Sources */,
 				E077F396243568A30019167E /* SceneDelegate.swift in Sources */,
 				E077F39E243568A30019167E /* CityAtoms.xcdatamodeld in Sources */,
 			);
@@ -289,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H54ZRA7WKB;
 				INFOPLIST_FILE = CityAtoms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H54ZRA7WKB;
 				INFOPLIST_FILE = CityAtoms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
