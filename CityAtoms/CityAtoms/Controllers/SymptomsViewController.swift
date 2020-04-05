@@ -53,6 +53,8 @@ class SymptomsViewController: UIViewController {
         cell6.addGestureRecognizer(tapGesture6)
         
         saveSymptomsButton.layer.cornerRadius = 30
+        
+        
     }
    
     @objc
