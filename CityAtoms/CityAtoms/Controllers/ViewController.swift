@@ -36,13 +36,13 @@ class ViewController: UIViewController {
     }
     
     func addGestures() {
-        let tapGesture1 = UITapGestureRecognizer.init(target: self, action: #selector(pushVCtoMain))
+        let tapGesture1 = UITapGestureRecognizer.init(target: self, action: #selector(pushVCtoSymptoms))
         sickFaceView.addGestureRecognizer(tapGesture1)
         
         let tapGesture2 = UITapGestureRecognizer.init(target: self, action: #selector(pushVCtoMain))
         maskFaceView.addGestureRecognizer(tapGesture2)
         
-        let tapGesture3 = UITapGestureRecognizer.init(target: self, action: #selector(pushVCtoSymptoms))
+        let tapGesture3 = UITapGestureRecognizer.init(target: self, action: #selector(pushVCtoMain))
         virusFaceView.addGestureRecognizer(tapGesture3)
         
         let tapGesture4 = UITapGestureRecognizer.init(target: self, action: #selector(pushVCtoMain))

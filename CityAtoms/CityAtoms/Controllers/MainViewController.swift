@@ -10,15 +10,16 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet var GreyLinkView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
-        let circle = CircleView(frame: CGRect(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height/2, width: 400, height: 400))
-        
-        
+        initializeUI()
     }
     
-    
+    func initializeUI() {
+        GreyLinkView.layer.cornerRadius = 10
+    }
 
 }
